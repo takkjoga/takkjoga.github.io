@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Drops Template</title>
-  <id>http://blog.example.com</id>
-  <link href="http://blog.example.com"/>
-  <link href="http://blog.example.com/feed.xml" rel="self"/>
+  <title>いくら寝ても眠たい</title>
+  <id>http://blog.takumi-onodera.work</id>
+  <link href="http://blog.takumi-onodera.work"/>
+  <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
   <updated>2015-12-03T13:05:00+09:00</updated>
   <author>
-    <name>Site Author</name>
+    <name>takkjoga</name>
   </author>
   <entry>
     <title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！</title>
-    <link rel="alternate" href="http://blog.example.com/2015/12/03/middleman-github-pages/"/>
-    <id>http://blog.example.com/2015/12/03/middleman-github-pages/</id>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/</id>
     <published>2015-12-03T13:05:00+09:00</published>
     <updated>2015-12-03T13:38:56+09:00</updated>
     <summary type="html">&lt;p&gt;&lt;img title="Kobito.cqGEgl.png" alt="Kobito.cqGEgl.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/28c5afca-2916-f806-3c67-b9e3f21fbdb5.png" /&gt;&lt;br /&gt;
@@ -278,8 +278,8 @@ end
   </entry>
   <entry>
     <title>This is an example article</title>
-    <link rel="alternate" href="http://blog.example.com/2014/11/20/odd-even/"/>
-    <id>http://blog.example.com/2014/11/20/odd-even/</id>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2014/11/20/odd-even/"/>
+    <id>http://blog.takumi-onodera.work/2014/11/20/odd-even/</id>
     <published>2014-11-20T09:00:00+09:00</published>
     <updated>2015-12-01T19:34:19+09:00</updated>
     <summary type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...&lt;/p&gt;</summary>
