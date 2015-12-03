@@ -4,10 +4,332 @@
   <id>http://blog.takumi-onodera.work</id>
   <link href="http://blog.takumi-onodera.work"/>
   <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
-  <updated>2014-11-20T00:00:00+09:00</updated>
+  <updated>2015-12-03T12:00:00+09:00</updated>
   <author>
     <name>takkjoga</name>
   </author>
+  <entry>
+    <title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！</title>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/</id>
+    <published>2015-12-03T12:00:00+09:00</published>
+    <updated>2015-12-03T14:43:51+09:00</updated>
+    <summary type="html">&lt;p&gt;&lt;img title="スクリーンショット 2015-12-03 10.12.07.png" alt="スクリーンショット 2015-12-03 10.12.07.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/cbe49151-d0bc-adad-6e62-aefe40039e79.png" /&gt;&lt;/p&gt;
+
+&lt;h1 id="advent-calendar-のために、自分専用のブログを作ろう！"&gt;advent calendar のために、自分専用のブログを作ろう！&lt;/h1&gt;
+
+&lt;p&gt;と思い立った方は、是非見て行ってくださいね( &lt;sup&gt;ω^&lt;/sup&gt; )&lt;/p&gt;
+
+&lt;p&gt;仕事で &lt;a href="https://middlemanapp.com"&gt;middleman&lt;/a&gt; を触る機会があったため、これを機にちょっとまとめてみました。&lt;/p&gt;
+
+&lt;p&gt;手元の環境は、以下です。&lt;br /&gt;
+�* Mac OSX 10.10.5 Yosemite&lt;/p&gt;
+
+&lt;p&gt;GitHub のアカウントが無い場合は、早速作っておきましょう。&lt;br /&gt;
+アカウントが作れたら、&lt;a href="https://help.github.com/articles/generating-ssh-keys/"&gt;ここ&lt;/a&gt;を参考にSSH鍵の登録をしておきましょう。&lt;/p&gt;
+
+&lt;p&gt;今回はテンプレートに &lt;code&gt;Drops&lt;/code&gt; を使ってみま...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;img title="スクリーンショット 2015-12-03 10.12.07.png" alt="スクリーンショット 2015-12-03 10.12.07.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/cbe49151-d0bc-adad-6e62-aefe40039e79.png" /&gt;&lt;/p&gt;
+
+&lt;h1 id="advent-calendar-のために、自分専用のブログを作ろう！"&gt;advent calendar のために、自分専用のブログを作ろう！&lt;/h1&gt;
+
+&lt;p&gt;と思い立った方は、是非見て行ってくださいね( &lt;sup&gt;ω^&lt;/sup&gt; )&lt;/p&gt;
+
+&lt;p&gt;仕事で &lt;a href="https://middlemanapp.com"&gt;middleman&lt;/a&gt; を触る機会があったため、これを機にちょっとまとめてみました。&lt;/p&gt;
+
+&lt;p&gt;手元の環境は、以下です。&lt;br&gt;
+�* Mac OSX 10.10.5 Yosemite&lt;/p&gt;
+
+&lt;p&gt;GitHub のアカウントが無い場合は、早速作っておきましょう。&lt;br&gt;
+アカウントが作れたら、&lt;a href="https://help.github.com/articles/generating-ssh-keys/"&gt;ここ&lt;/a&gt;を参考にSSH鍵の登録をしておきましょう。&lt;/p&gt;
+
+&lt;p&gt;今回はテンプレートに &lt;code&gt;Drops&lt;/code&gt; を使ってみます。&lt;br&gt;
+テンプレートのインストール方法は、他のテンプレートでも同様です。&lt;/p&gt;
+
+&lt;h2 id="最初に-drops-のインストール"&gt;最初に &lt;code&gt;Drops&lt;/code&gt; のインストール&lt;/h2&gt;
+
+&lt;p&gt;ホームディレクトリに &lt;code&gt;.middleman&lt;/code&gt; ディレクトリを作って、その中にインストールしておきます。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;cd ~/
+mkdir .middleman
+git clone https://github.com/5t111111/middleman-blog-drops-template.git ~/middleman/blog-drops
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次に blog 関連のファイルを置くディレクトリを決めて、以下のコマンドで blog プロジェクトを作成 ＆ 初期化します。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;cd ~/
+middleman init my_blog_project --template=blog-drops --skip-bundle
+cd my_blog_project
+bundle install --path vendor/bundle
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Drops では以下も実行します。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id="github-pages"&gt;GitHub Pages&lt;/h1&gt;
+
+&lt;p&gt;公開するホストには &lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt; を選択しました。&lt;/p&gt;
+
+&lt;h2 id="まずはリポジトリの作成"&gt;まずはリポジトリの作成&lt;/h2&gt;
+
+&lt;p&gt;GitHub の&lt;a href="https://github.com/new"&gt;新規リポジトリ作成ページ&lt;/a&gt; の &lt;code&gt;Repository name&lt;/code&gt; に&lt;/p&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;username&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;.github.io&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;の &lt;code&gt;{username}&lt;/code&gt; に自分のGitHubアカウントの名前を入力します。&lt;br&gt;
+ 自分の場合は、アカウント名を &lt;a href="https://github.com/takkjoga"&gt;takkjoga&lt;/a&gt; にしているので、&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;takkjoga.github.io
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;になります。&lt;/p&gt;
+
+&lt;h2 id="リモートリポジトリ"&gt;リモートリポジトリ&lt;/h2&gt;
+
+&lt;p&gt;自分の使いやすい git クライアントで、さっき作ったリポジトリを登録します。&lt;br&gt;
+自分はターミナルで使用するのが慣れているので、以下のようになります。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;cd ~/my_blog_project
+git init
+git remote add origin git@github.com:takkjoga/takkjoga.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id="早速公開！"&gt;早速公開！&lt;/h1&gt;
+
+&lt;p&gt;何も考えず、以下のコマンドでデフォルトの状態を公開しちゃいます。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;bundle exec middleman build
+bundle exec middleman deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;デプロイが終わったら、&lt;code&gt;{username}.github.io&lt;/code&gt; に早速アクセスしてみましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="スクリーンショット 2015-12-03 10.46.46.png" alt="スクリーンショット 2015-12-03 10.46.46.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/ed259585-f1dd-6857-6dc8-7de72972c9c5.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;できた！！&lt;br&gt;
+簡単だなぁ。。&lt;/p&gt;
+
+&lt;h1 id="せっかくだし自分のドメインで公開したい"&gt;せっかくだし自分のドメインで公開したい&lt;/h1&gt;
+
+&lt;p&gt;自分用のサーバーにあてているドメインを持っている人なら、ブログにもそのドメインを使いたい人は少なくないと思います。&lt;br&gt;
+GitHub Pagesにはカスタムドメイン設定ができる仕組みがあるようです。&lt;br&gt;
+&lt;a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/"&gt;ここ&lt;/a&gt;に説明が書いてありますが、middleman の場合ちょっと手順が変わるので説明します。&lt;/p&gt;
+
+&lt;h2 id="cnameファイルをコミット"&gt;CNAMEファイルをコミット&lt;/h2&gt;
+
+&lt;p&gt;GitHubの説明ページでは、ルートディレクトリに直接 &lt;code&gt;CNAME&lt;/code&gt; ファイルを配置してありますが、&lt;br&gt;
+middleman を使って公開する場合は、&lt;code&gt;source/&lt;/code&gt; ディレクトリ以下のファイルがビルドされて配置されます。&lt;/p&gt;
+
+&lt;p&gt;というわけで、&lt;code&gt;source/CNAME&lt;/code&gt; にファイルを作成して、開いたファイル設定したいドメインを記述します。&lt;br&gt;
+自分は &lt;code&gt;takumi-onodera.work&lt;/code&gt; というドメインを持っているので、以下のように記述しました。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;blog.takumi-onodera.work
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ファイルの編集が終わったらデプロイしておきます。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;bundle exec middleman deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="dnsの設定"&gt;DNSの設定&lt;/h2&gt;
+
+&lt;p&gt;ドメインを管理しているサービスのDNSレコード管理ページなどで、&lt;code&gt;CNAME&lt;/code&gt; を設定します。&lt;br&gt;
+&lt;code&gt;CNAME&lt;/code&gt;のvalueには、&lt;code&gt;{username}.github.io&lt;/code&gt; を設定します。&lt;br&gt;
+設定が完了したら、DNSの浸透を待つのみ。&lt;/p&gt;
+
+&lt;h1 id="ブログのタイトルなどの設定"&gt;ブログのタイトルなどの設定&lt;/h1&gt;
+
+&lt;p&gt;middleman で設定を司っているのは、&lt;code&gt;config.rb&lt;/code&gt; というファイルです。&lt;/p&gt;
+
+&lt;p&gt;Dropsテンプレートでは、&lt;a href="http://qiita.com/5t111111/items/5e79a169b3162e2eab4c#ブログの構成"&gt;説明ページ&lt;/a&gt;があるので、参照しながら以下のような設定にしました。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Time.zone = 'Tokyo'
+
+set :site_url, 'http://blog.takumi-onodera.work'
+set :site_title, 'いくら寝ても眠たい'
+set :site_description, 'いくら寝ても眠たい人のブログ。プログラミングやたまにインフラ、あまり有名ではないミュージシャンのことについてダラダラ書いていきます。'
+set :site_author, 'takkjoga'
+set :site_author_profile, '株式会社ドリコムでRubyエンジニアをしております。変な音楽が大好きです。'
+set :site_author_image, 'profile.png'
+set :reverse_title, true
+set :social_links,
+    twitter: 'https://twitter.com/takkjoga',
+    github: 'https://github.com/takkjoga'
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id="404ページを設定する"&gt;404ページを設定する&lt;/h1&gt;
+
+&lt;p&gt;存在しないURLにアクセスされたときに表示されるページを設定します。&lt;br&gt;
+これにはちょっとファイルをいじる必要があります。&lt;br&gt;
+&lt;a href="https://help.github.com/articles/custom-404-pages/"&gt;ここ&lt;/a&gt; に説明がありますが、ルートディレクトリに&lt;code&gt;404.html&lt;/code&gt;というファイルが存在すれば、そのファイルが404ページとして表示されるようにです。&lt;/p&gt;
+
+&lt;p&gt;今回は blog_drops を使用しているので、あらかじめ用意されている404ページをちょっと修正します。&lt;br&gt;
+&lt;code&gt;source/404.html.slim&lt;/code&gt; のファイルの一番上に、&lt;a href="http://jekyllrb.com/docs/frontmatter/"&gt;YAML front matter&lt;/a&gt;形式で &lt;code&gt;directory_index: false&lt;/code&gt; を追記します。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;---
+directory_index: false
+---
+
+h1
+  | 404
+h3
+  | Page not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;あとは、ビルドアンドデプロイ。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;bundle exec middleman build
+bundle exec middleman deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;デプロイが完了したら、ドメインに適当なパスを入力して確認してみましょう。&lt;/p&gt;
+
+&lt;h1 id="記事を書こう"&gt;記事を書こう&lt;/h1&gt;
+
+&lt;p&gt;記事を書くためのコマンドが用意されています。&lt;br&gt;
+タイトルに空白が含まれる場合は、ダブルクォーテーションが必要です。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;bundle exec middleman article "middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！"
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下のように、&lt;code&gt;source/posts/2015-12-03-middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！.html.md&lt;/code&gt; というファイルが生成されます。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;== Blog Sources: posts/{year}-{month}-{day}-{title}.html (:prefix + :sources)
+== LiveReload accepting connections from ws://192.168.xxx.xxx:xxxxx
+      create  source/posts/2015-12-03-middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！.html.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このファイルに、マークダウンで記事を書いていきます。&lt;br&gt;
+ファイルの上部にある YAML front matter形式 の &lt;code&gt;tags:&lt;/code&gt; には、記事のタグをカンマ区切りで登録しておきます。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;---
+title: middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！
+date: 2015-12-07 12:00 +0000
+tags: middleman, GitHub Pages
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="日本語タイトルがビルドできない。。"&gt;日本語タイトルがビルドできない。。&lt;/h2&gt;
+
+&lt;p&gt;ここまでの設定だと、ビルドしたときに以下のエラーがでると思います。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;error  build/feed.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これは、日本語の含まれたタイトルをURIとして feex.xml として出力しようとしたときに、ascii 文字列だけにしてね💢と怒られているようです。&lt;br&gt;
+自分が選んだ解決方法は、記事のURIを &lt;code&gt;tags:&lt;/code&gt; に設定したものすることです。&lt;br&gt;
+&lt;code&gt;config.rb&lt;/code&gt; を以下のように修正しました。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;activate :blog do |blog|
+  blog.permalink = '{year}/{month}/{day}/{tags}.html'
+  #                                      ^^^^^^
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こうすることによって、出力される記事のURIが&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;/2015/12/03/middleman-github-pages/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と出力されて、URIとしても何が書いてあるかわかりやすくていいと思います。&lt;br&gt;
+ただし、&lt;code&gt;tags:&lt;/code&gt; に日本語が登録できなくなりますが。。汗&lt;/p&gt;
+
+&lt;h1 id="他にもいろいろなテンプレート"&gt;他にもいろいろなテンプレート&lt;/h1&gt;
+
+&lt;p&gt;Safariのレスポンシブデザインモードでスクショしました。&lt;br&gt;
+５分でできる！をテーマにしているので、デフォルトのデザインのみ貼ってあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/5t111111/middleman-blog-drops-template"&gt;middleman-blog-drops-template&lt;/a&gt;&lt;br&gt;
+&lt;img title="スクリーンショット 2015-12-01 20.23.47.png" alt="スクリーンショット 2015-12-01 20.23.47.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/dced97fb-3bc8-2eb2-ba7c-cd8fe6a8dd1f.png" /&gt;&lt;br&gt;
+&lt;img title="スクリーンショット 2015-12-01 20.24.01.png" alt="スクリーンショット 2015-12-01 20.24.01.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/8864015c-756f-c262-6a6a-c85bfa744c01.png" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/5t111111/middleman-blog-bourbon-template"&gt;middleman-blog-bourbon-template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;Gemfile&lt;/code&gt; で読み込んでいる &lt;code&gt;slim&lt;/code&gt; のバージョンを上げないと &lt;code&gt;bundle exec middleman server&lt;/code&gt; したときにエラーが出ました。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;-gem 'slim', '~&amp;gt; 2.0.2'
++gem 'slim', '~&amp;gt; 3.0.6'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;あと、以下を追加。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;+$base-accent-color: #000000;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img title="スクリーンショット 2015-12-01 21.38.08.png" alt="スクリーンショット 2015-12-01 21.38.08.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/79ee0b5b-5513-82ec-014e-1fee81ca18a9.png" /&gt;&lt;br&gt;
+&lt;img title="スクリーンショット 2015-12-01 21.38.22.png" alt="スクリーンショット 2015-12-01 21.38.22.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/2c11ff3e-84f3-fc91-a15e-f36307ea6836.png" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/nathos/amicus"&gt;amicus&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;要カスタマイズとのこと。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img title="スクリーンショット 2015-12-01 21.52.35.png" alt="スクリーンショット 2015-12-01 21.52.35.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/82711db6-be7c-817b-1726-c039dade2268.png" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pzi/middleman-basis"&gt;middleman-basis&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;デフォルトページはめちゃシンプルでションボリ.com。機能モリモリなので &lt;code&gt;bundle install&lt;/code&gt; に時間もかかる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img title="スクリーンショット 2015-12-01 22.03.57.png" alt="スクリーンショット 2015-12-01 22.03.57.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/1feda050-c9e6-f089-e9b8-e846082e1fa6.png" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bryanbraun/franklin"&gt;franklin&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;オンラインブックをイメージしてるようなので、落ち着いてて優しい雰囲気です。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img title="スクリーンショット 2015-12-01 22.29.44.png" alt="スクリーンショット 2015-12-01 22.29.44.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/240a09b1-43f0-9d4c-b673-47dc1e3adf3c.png" /&gt;&lt;br&gt;
+&lt;img title="スクリーンショット 2015-12-01 22.30.03.png" alt="スクリーンショット 2015-12-01 22.30.03.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/258ab21e-adaf-a729-d024-79745ec49139.png" /&gt;&lt;/p&gt;
+
+&lt;h1 id="rails-の-activerecord-を参照する"&gt;Rails の ActiveRecord を参照する&lt;/h1&gt;
+
+&lt;h2 id="gemfile-に以下を追加"&gt;Gemfile に以下を追加&lt;/h2&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;gem 'activerecord'
+gem "mysql2", '~&amp;gt; 0.3.13'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このとき、mysql2 のバージョンの指定をしないと、mysql2 が認識されないので注意&lt;/p&gt;
+
+&lt;h2 id="config.rb-に以下を追加"&gt;config.rb に以下を追加&lt;/h2&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;require 'active_record'
+require 'yaml'
+
+config = YAML.load_file('../config/database.yml')
+
+ActiveRecord::Base.establish_connection config['development']
+ActiveRecord::Base.logger = Logger.new(STDERR) # ログにSQLを出力
+
+## 各Modelを使えるようにする
+Dir.glob("../app/models/**/*.rb").each do |file|
+  require_dependency file
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上記を外部ファイルにするとき、自分は最初ファイル名を active_record.rb として保存していたが、&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;/path/to/project/middleman/active_record.rb:6:in `&amp;lt;top (required)&amp;gt;': uninitialized constant ActiveRecord (NameError)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;のエラーが出続けて悩みました。。&lt;/p&gt;
+
+&lt;h2 id="modelが使えない場合"&gt;Modelが使えない場合&lt;/h2&gt;
+
+&lt;p&gt;以下のようなエラーが出る場合&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;/path/to/project/app/models/hoge.rb:28:in `&amp;lt;class:Hoge&amp;gt;': uninitialized constant Hoge::Rails (NameError)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Railsのシガラミに囚われてしまっているので、下記のように書き換えてリレーション周りを再定義します。&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Dir.glob("../app/models/*.rb") do |file|
+  self.class.const_set File.basename(file, '.rb').camelize, Class.new(ActiveRecord::Base)
+end
+
+class Hoge &amp;lt; ActiveRecord::Base
+  has_many :fugas
+end
+
+class Fuga &amp;lt; ActiveRecord::Base
+  belongs_to :hoge
+end
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
   <entry>
     <title>This is an example article</title>
     <link rel="alternate" href="http://blog.takumi-onodera.work/2014/11/20/odd-even/"/>
