@@ -1,26 +1,46 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><meta content="initial-scale=1.0, user-scalable=no" name="viewport" /><link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/favicons/apple-touch-icon-57x57-497125d1.png" rel="apple-touch-icon" sizes="57x57" /><link href="/favicons/apple-touch-icon-60x60-4e771ba8.png" rel="apple-touch-icon" sizes="60x60" /><link href="/favicons/apple-touch-icon-72x72-e41e0c42.png" rel="apple-touch-icon" sizes="72x72" /><link href="/favicons/apple-touch-icon-76x76-d40ca4ed.png" rel="apple-touch-icon" sizes="76x76" /><link href="/favicons/apple-touch-icon-114x114-0477250e.png" rel="apple-touch-icon" sizes="114x114" /><link href="/favicons/apple-touch-icon-120x120-bb29028e.png" rel="apple-touch-icon" sizes="120x120" /><link href="/favicons/apple-touch-icon-144x144-41f60c1e.png" rel="apple-touch-icon" sizes="144x144" /><link href="/favicons/apple-touch-icon-152x152-106db5b2.png" rel="apple-touch-icon" sizes="152x152" /><link href="/favicons/apple-touch-icon-180x180-7d79978b.png" rel="apple-touch-icon" sizes="180x180" /><link href="/favicons/favicon-32x32-f6c5a6a4.png" rel="icon" sizes="32x32" type="image/png" /><link href="/favicons/android-chrome-192x192-9fdfb6ab.png" rel="icon" sizes="192x192" type="image/png" /><link href="/favicons/favicon-96x96-8708d047.png" rel="icon" sizes="96x96" type="image/png" /><link href="/favicons/favicon-16x16-e2f610e8.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicons/manifest.json" rel="manifest" /><link color="#5bbad5" href="/favicons/safari-pinned-tab-13dc7d3f.svg" rel="mask-icon" /><meta content="#da532c" name="msapplication-TileColor" /><meta content="/mstile-144x144.png" name="msapplication-TileImage" /><meta content="#ffffff" name="theme-color" /><title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！ | いくら寝ても眠たい</title><meta description="  advent calendar のために、自分専用のブログを作ろう！  と思い立った方は、是非見て行ってくださいね( ω^ )    仕事で middleman を触る機会があったため、これを機にちょっとまとめてみました。    手元の環境は、以下です。    * Mac OSX 10.10.5 Yosemite  GitHub のアカウントが無い場合は、早速作っておきましょう。   アカウントが作れたら、ここを参考にSSH鍵の登録をしておきましょう。    今回はテンプレートに Drops" /><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><link href="../../../../stylesheets/all-e593a01e.css" rel="stylesheet" type="text/css" /><link href="../../../../images/favicon-6c3f3d04.png" rel="icon" type="image/png" /><meta property="fb:app_id" content="531634937006239" /><meta property="og:type" content="article">
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><meta content="initial-scale=1.0, user-scalable=no" name="viewport" /><link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/favicons/apple-touch-icon-57x57-497125d1.png" rel="apple-touch-icon" sizes="57x57" /><link href="/favicons/apple-touch-icon-60x60-4e771ba8.png" rel="apple-touch-icon" sizes="60x60" /><link href="/favicons/apple-touch-icon-72x72-e41e0c42.png" rel="apple-touch-icon" sizes="72x72" /><link href="/favicons/apple-touch-icon-76x76-d40ca4ed.png" rel="apple-touch-icon" sizes="76x76" /><link href="/favicons/apple-touch-icon-114x114-0477250e.png" rel="apple-touch-icon" sizes="114x114" /><link href="/favicons/apple-touch-icon-120x120-bb29028e.png" rel="apple-touch-icon" sizes="120x120" /><link href="/favicons/apple-touch-icon-144x144-41f60c1e.png" rel="apple-touch-icon" sizes="144x144" /><link href="/favicons/apple-touch-icon-152x152-106db5b2.png" rel="apple-touch-icon" sizes="152x152" /><link href="/favicons/apple-touch-icon-180x180-7d79978b.png" rel="apple-touch-icon" sizes="180x180" /><link href="/favicons/favicon-32x32-f6c5a6a4.png" rel="icon" sizes="32x32" type="image/png" /><link href="/favicons/android-chrome-192x192-9fdfb6ab.png" rel="icon" sizes="192x192" type="image/png" /><link href="/favicons/favicon-96x96-8708d047.png" rel="icon" sizes="96x96" type="image/png" /><link href="/favicons/favicon-16x16-e2f610e8.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicons/manifest.json" rel="manifest" /><link color="#5bbad5" href="/favicons/safari-pinned-tab-13dc7d3f.svg" rel="mask-icon" /><meta content="#da532c" name="msapplication-TileColor" /><meta content="/mstile-144x144.png" name="msapplication-TileImage" /><meta content="#ffffff" name="theme-color" /><title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！ | いくら寝ても眠たい</title><meta description="  これは 【その2】ドリコム Advent Calendar 2015 7日目の記事です。 　 6日目の記事は、tanaka0000さんの「UnityのiOSビルドをJenkinsに任せて、ついでにCrashlytics beta配信して結果をChatWorkに知らせる」です。 　 【その1】ドリコム Advent Calendar 2015 はこちらです。 　 個人的には、この記事がオススメです。熱くて愛のある❤️いい記事  自己紹介  ドリコムに入ってから Ruby を始めたエンジニ..." /><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><link href="../../../../stylesheets/all-e593a01e.css" rel="stylesheet" type="text/css" /><link href="../../../../images/favicon-6c3f3d04.png" rel="icon" type="image/png" /><meta property="fb:app_id" content="531634937006239" /><meta property="og:type" content="article">
 <meta property="og:url" content="http://blog.takumi-onodera.work//2015/12/03/middleman-github-pages/">
 <meta property="og:title" content="middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！ | いくら寝ても眠たい">
 <meta property="og:image" content="http://blog.takumi-onodera.work/favicons/mstile-310x310-d3b87fa9.png">
 <meta property="og:site_name" content="いくら寝ても眠たい">
 <meta property="og:description" content="いくら寝ても眠たい人のブログ。プログラミングやたまにインフラ、あまり有名ではないミュージシャンのことについてダラダラ書いていきます。"></head><body><header><div class="top-menu"><div class="top-menu-wrapper"><div class="top-menu-list"><ul><li><a href="/">Home</a></li><li><a href="/archives/">Archives</a></li><li><a href="/tags/">Tags</a></li><li><a href="/by-year/">By Year</a></li></ul></div><div class="feed"><a href="/feed.xml"><i class="fa fa-rss-square"></i></a></div></div></div><h1 class="logo"><a href="/" title="いくら寝ても眠たい"><span class="logo-text">いくら寝ても眠たい</span></a></h1></header><main><article><h1 class="article-title">middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！</h1><div class="posted-date-wrapper"><i class="fa fa-clock-o"></i><span class="posted-date">December 03, 2015</span></div><div class="tag-labels"><a href="/tags/middleman/"><small class="tag-label">middleman</small></a><a href="/tags/github-pages/"><small class="tag-label">GitHub Pages</small></a></div><hr class="article-header-separator" /><p><img title="スクリーンショット 2015-12-03 10.12.07.png" alt="スクリーンショット 2015-12-03 10.12.07.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/cbe49151-d0bc-adad-6e62-aefe40039e79.png" /></p>
 
-<h1 id="advent-calendar-のために、自分専用のブログを作ろう！">advent calendar のために、自分専用のブログを作ろう！</h1>
+<p>これは <a href="http://www.adventar.org/calendars/1044">【その2】ドリコム Advent Calendar 2015</a> 7日目の記事です。<br>
+　<br>
+6日目の記事は、tanaka0000さんの「<a href="http://tanaka0000.hatenablog.com/entry/2015/12/06/133246">UnityのiOSビルドをJenkinsに任せて、ついでにCrashlytics beta配信して結果をChatWorkに知らせる</a>」です。<br>
+　<br>
+<a href="http://www.adventar.org/calendars/1043">【その1】ドリコム Advent Calendar 2015</a> はこちらです。<br>
+　<br>
+個人的には、<a href="http://kakaricho.hatenadiary.jp/entry/2015/12/05/172344">この</a>記事がオススメです。熱くて愛のある❤️いい記事</p>
 
-<p>と思い立った方は、是非見て行ってくださいね( <sup>ω^</sup> )  </p>
+<h1 id="自己紹介">自己紹介</h1>
 
-<p>仕事で <a href="https://middlemanapp.com">middleman</a> を触る機会があったため、これを機にちょっとまとめてみました。  </p>
+<p>ドリコムに入ってから Ruby を始めたエンジニアです。<br>
+社内ではディレクター職でもないのに「デラD」と呼ばれる、困惑おじさんです。  </p>
+
+<h1 id="advent-calendar-のために、自分専用のブログを作ろう！">Advent Calendar のために、自分専用のブログを作ろう！</h1>
+
+<p>と思い立った方は、是非見て行ってくださいね😊<br>
+　<br>
+そんな自分も、今年の Advent Calendar をどこで書こうか悩んだので、以前から興味のあった <a href="https://middlemanapp.com">middleman</a> を使ってみようと思い、これを機にちょっとまとめてみました。</p>
+
+<p>　<br>
+　</p>
 
 <p>手元の環境は、以下です。  </p>
 
-<p>* Mac OSX 10.10.5 Yosemite</p>
+<ul>
+<li>Mac OSX 10.10.5 Yosemite</li>
+<li>ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]</li>
+<li>Bundler version 1.10.6</li>
+</ul>
 
 <p>GitHub のアカウントが無い場合は、早速作っておきましょう。 </p>
 
-<p>アカウントが作れたら、<a href="https://help.github.com/articles/generating-ssh-keys/">ここ</a>を参考にSSH鍵の登録をしておきましょう。  </p>
-
-<p>今回はテンプレートに <a href="https://github.com/5t111111/middleman-blog-drops-template">Drops</a> を使ってみます。<br>
-テンプレートのインストール方法は、他のテンプレートでも同様です。</p>
+<p>アカウントが作れたら、<a href="https://help.github.com/articles/generating-ssh-keys/">ここ</a>を参考に SSH 鍵の登録をしておきましょう。<br><br>
+　<br>
+今回は View テンプレートに <a href="https://github.com/5t111111/middleman-blog-drops-template">Drops</a> を使ってみます。<br>
+View テンプレートのインストール方法は、他のテンプレートでも同様です。</p>
 
 <h2 id="最初に-drops-のインストール">最初に <code>Drops</code> のインストール</h2>
 
@@ -61,7 +81,7 @@ bundle install --path vendor/bundle
 <h2 id="リモートリポジトリ">リモートリポジトリ</h2>
 
 <p>自分の使いやすい git クライアントで、さっき作ったリポジトリを登録します。<br>
-自分はターミナルで使用するのが慣れているので、以下のようになります。</p>
+自分はターミナルを使用するのが慣れているので、以下のようになります。</p>
 <pre class="highlight plaintext"><code>cd ~/my_blog_project
 git init
 git remote add origin git@github.com:takkjoga/takkjoga.github.io.git
@@ -78,79 +98,8 @@ bundle exec middleman deploy
 
 <p><img title="スクリーンショット 2015-12-03 10.46.46.png" alt="スクリーンショット 2015-12-03 10.46.46.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/ed259585-f1dd-6857-6dc8-7de72972c9c5.png" /></p>
 
-<p>できた！！<br>
+<p>できたぁっ！！<br>
 簡単だなぁ。。</p>
-
-<h1 id="せっかくだし自分のドメインで公開したい">せっかくだし自分のドメインで公開したい</h1>
-
-<p>自分用のサーバーにあてているドメインを持っている人なら、ブログにもそのドメインを使いたい人は少なくないと思います。<br>
-GitHub Pagesにはカスタムドメイン設定ができる仕組みがあるようです。<br>
-<a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/">ここ</a>に説明が書いてありますが、middleman の場合ちょっと手順が変わるので説明します。</p>
-
-<h2 id="cnameファイルをコミット">CNAMEファイルをコミット</h2>
-
-<p>GitHubの説明ページでは、ルートディレクトリに直接 <code>CNAME</code> ファイルを配置してありますが、<br>
-middleman を使って公開する場合は、<code>source/</code> ディレクトリ以下のファイルがビルドされて配置されます。</p>
-
-<p>というわけで、<code>source/CNAME</code> にファイルを作成して、開いたファイル設定したいドメインを記述します。<br>
-自分は <code>takumi-onodera.work</code> というドメインを持っているので、以下のように記述しました。</p>
-<pre class="highlight plaintext"><code>blog.takumi-onodera.work
-</code></pre>
-
-<p>ファイルの編集が終わったらデプロイしておきます。</p>
-<pre class="highlight plaintext"><code>bundle exec middleman deploy
-</code></pre>
-
-<h2 id="dnsの設定">DNSの設定</h2>
-
-<p>ドメインを管理しているサービスのDNSレコード管理ページなどで、<code>CNAME</code> を設定します。<br>
-<code>CNAME</code>のvalueには、<code>{username}.github.io</code> を設定します。<br>
-設定が完了したら、DNSの浸透を待つのみ。</p>
-
-<h1 id="ブログのタイトルなどの設定">ブログのタイトルなどの設定</h1>
-
-<p>middleman で設定を司っているのは、<code>config.rb</code> というファイルです。</p>
-
-<p>Dropsテンプレートでは、<a href="http://qiita.com/5t111111/items/5e79a169b3162e2eab4c#ブログの構成">紹介ページ</a>があるので、参照しながら以下のような設定にしました。</p>
-<pre class="highlight plaintext"><code>Time.zone = 'Tokyo'
-
-set :site_url, 'http://blog.takumi-onodera.work'
-set :site_title, 'いくら寝ても眠たい'
-set :site_description, 'いくら寝ても眠たい人のブログ。プログラミングやたまにインフラ、あまり有名ではないミュージシャンのことについてダラダラ書いていきます。'
-set :site_author, 'takkjoga'
-set :site_author_profile, '株式会社ドリコムでRubyエンジニアをしております。変な音楽が大好きです。'
-set :site_author_image, 'profile.png'
-set :reverse_title, true
-set :social_links,
-    twitter: 'https://twitter.com/takkjoga',
-    github: 'https://github.com/takkjoga'
-
-</code></pre>
-
-<h1 id="404ページを設定する">404ページを設定する</h1>
-
-<p>存在しないURLにアクセスされたときに表示されるページを設定します。<br>
-これにはちょっとファイルをいじる必要があります。<br>
-<a href="https://help.github.com/articles/custom-404-pages/">ここ</a> に説明がありますが、ルートディレクトリに<code>404.html</code>というファイルが存在すれば、そのファイルが404ページとして表示されるようにです。</p>
-
-<p>今回は blog_drops を使用しているので、あらかじめ用意されている404ページをちょっと修正します。<br>
-<code>source/404.html.slim</code> のファイルの一番上に、<a href="http://jekyllrb.com/docs/frontmatter/">YAML front matter</a>形式で <code>directory_index: false</code> を追記します。</p>
-<pre class="highlight plaintext"><code>---
-directory_index: false
----
-
-h1
-  | 404
-h3
-  | Page not found
-</code></pre>
-
-<p>あとは、ビルドアンドデプロイ。</p>
-<pre class="highlight plaintext"><code>bundle exec middleman build
-bundle exec middleman deploy
-</code></pre>
-
-<p>デプロイが完了したら、ドメインに適当なパスを入力して確認してみましょう。</p>
 
 <h1 id="記事を書こう">記事を書こう</h1>
 
@@ -167,12 +116,15 @@ bundle exec middleman deploy
 
 <p>このファイルに、マークダウンで記事を書いていきます。<br>
 ファイルの上部にある YAML front matter形式 の <code>tags:</code> には、記事のタグをカンマ区切りで登録しておきます。</p>
-<pre class="highlight plaintext"><code>---
-title: middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！
-date: 2015-12-07 12:00 +0900
-tags: middleman, GitHub Pages
+<pre class="highlight markdown"><code>&lt;!--
+source/posts/2015-12-07-middlemanとgithub-pagesでブログを5分で開設!ほか盛りだくさん!.html.md
+<span class="gh">--&gt;
 ---
-
+</span>title: middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！
+date: 2015-12-07 12:00 +0900
+<span class="gh">tags: middleman, GitHub Pages
+---
+</span>
 </code></pre>
 
 <h2 id="記事の確認">記事の確認</h2>
@@ -200,10 +152,11 @@ tags: middleman, GitHub Pages
 <p>自分が選んだ解決方法は、記事のURIを <code>tags:</code> に設定したものを利用することです。</p>
 
 <p><code>config.rb</code> を以下のように修正しました。</p>
-<pre class="highlight plaintext"><code>activate :blog do |blog|
-  blog.permalink = '{year}/{month}/{day}/{tags}.html'
-  #                                      ^^^^^^
-end
+<pre class="highlight ruby"><code><span class="c1">#config.rb</span>
+<span class="n">activate</span> <span class="ss">:blog</span> <span class="k">do</span> <span class="o">|</span><span class="n">blog</span><span class="o">|</span>
+  <span class="n">blog</span><span class="p">.</span><span class="nf">permalink</span> <span class="o">=</span> <span class="s1">'{year}/{month}/{day}/{tags}.html'</span>
+  <span class="c1">#                                      ^^^^^^</span>
+<span class="k">end</span>
 </code></pre>
 
 <p>こうすることによって、出力される記事のURIが</p>
@@ -211,13 +164,182 @@ end
 </code></pre>
 
 <p>と出力されて、URIとしても何が書いてあるかわかりやすくていいと思います。<br>
-ただし、<code>tags:</code> に日本語が登録できなくなりますが。。汗</p>
+ただし、<code>tags:</code> に日本語が登録できなくなりますが。。💦</p>
 
-<h2 id="できたかな？">できたかな？</h2>
+<h2 id="できましたか？">できましたか？</h2>
 
-<p>5分では終わらなかったかもしれませんが、結構簡単にブログを作れてしまったのではないかなと思います。</p>
+<p>5分では終わらなかったかもしれませんが、結構簡単にブログサイトを作れてしまったのではないかなと思います。<br>
+　<br>
+以下で、このブログをさらにカスタマイズしていきたいと思います。<br>
+お時間のある方はのんびり眺めていってください。</p>
 
-<p>自分はブログ無精なので、今後更新していくかは微妙なところですが、Drops テンプレートの見た目もすごく綺麗だし、アウトプットすべきことは山ほどあるので、前向きに今回作ったブログを更新していきたいと思います。</p>
+<h1 id="せっかくだし自分のドメインで公開したい">せっかくだし自分のドメインで公開したい</h1>
+
+<p>自分用のサーバーにあてているドメインを持っている人なら、ブログにもそのドメインを使いたい人は少なくないと思います。<br>
+GitHub Pagesにはカスタムドメイン設定ができる仕組みがあるようです。<br>
+<a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/">ここ</a>に説明が書いてありますが、middleman の場合ちょっと手順が変わるので説明します。</p>
+
+<h2 id="cnameファイルをコミット">CNAMEファイルをコミット</h2>
+
+<p>GitHubの説明ページでは、ルートディレクトリに直接 <code>CNAME</code> ファイルを配置してありますが、<br>
+middleman を使って公開する場合は、<code>source/</code> ディレクトリ以下のファイルがビルドされて配置されます。</p>
+
+<p>というわけで、<code>source/CNAME</code> にファイルを作成して、そのファイルに設定したいドメインを記述します。<br>
+自分は <code>takumi-onodera.work</code> というドメインを持っているので、以下のように記述しました。</p>
+<pre class="highlight plaintext"><code>#source/CNAME
+blog.takumi-onodera.work
+</code></pre>
+
+<p>ファイルの編集が終わったらデプロイしておきます。</p>
+<pre class="highlight plaintext"><code>bundle exec middleman deploy
+</code></pre>
+
+<h2 id="dnsの設定">DNSの設定</h2>
+
+<p>ドメインを管理しているサービスのDNSレコード管理ページなどで、<code>CNAME</code> を設定します。<br>
+<code>CNAME</code>のvalueには、<code>{username}.github.io</code> を設定します。<br>
+設定が完了したら、DNSの浸透を待つのみ。</p>
+
+<h1 id="ブログのタイトルなどの設定">ブログのタイトルなどの設定</h1>
+
+<p>middleman で設定を司っているのは、<code>config.rb</code> というファイルです。</p>
+
+<p>Dropsテンプレートでは、<a href="http://qiita.com/5t111111/items/5e79a169b3162e2eab4c#ブログの構成">紹介ページ</a>があるので、参照しながら以下のような設定にしました。</p>
+<pre class="highlight ruby"><code><span class="c1">#config.rb</span>
+<span class="no">Time</span><span class="p">.</span><span class="nf">zone</span> <span class="o">=</span> <span class="s1">'Tokyo'</span>
+
+<span class="n">set</span> <span class="ss">:site_url</span><span class="p">,</span> <span class="s1">'http://blog.takumi-onodera.work'</span>
+<span class="n">set</span> <span class="ss">:site_title</span><span class="p">,</span> <span class="s1">'いくら寝ても眠たい'</span>
+<span class="n">set</span> <span class="ss">:site_description</span><span class="p">,</span> <span class="s1">'いくら寝ても眠たい人のブログ。プログラミングやたまにインフラ、あまり有名ではないミュージシャンのことについてダラダラ書いていきます。'</span>
+<span class="n">set</span> <span class="ss">:site_author</span><span class="p">,</span> <span class="s1">'takkjoga'</span>
+<span class="n">set</span> <span class="ss">:site_author_profile</span><span class="p">,</span> <span class="s1">'株式会社ドリコムでRubyエンジニアをしております。変な音楽が大好きです。'</span>
+<span class="n">set</span> <span class="ss">:site_author_image</span><span class="p">,</span> <span class="s1">'profile.png'</span>
+<span class="n">set</span> <span class="ss">:reverse_title</span><span class="p">,</span> <span class="kp">true</span>
+<span class="n">set</span> <span class="ss">:social_links</span><span class="p">,</span>
+    <span class="ss">twitter: </span><span class="s1">'https://twitter.com/takkjoga'</span><span class="p">,</span>
+    <span class="ss">github: </span><span class="s1">'https://github.com/takkjoga'</span>
+
+</code></pre>
+
+<h1 id="404ページを設定する">404ページを設定する</h1>
+
+<p>存在しない URL にアクセスされたときに表示されるページを設定します。<br>
+これにはちょっとファイルをいじる必要があります。<br>
+<a href="https://help.github.com/articles/custom-404-pages/">ここ</a> に説明がありますが、ドキュメントルートに <code>404.html</code> というファイルが存在すれば、そのファイルが 404 ページとして表示されるようになります。<br>
+　<br>
+今回は Drops を使用しているので、あらかじめ用意されている 404 ページをちょっと修正します。<br>
+<code>source/404.html.slim</code> のファイルの一番上に、<a href="http://jekyllrb.com/docs/frontmatter/">YAML front matter</a>形式で <code>directory_index: false</code> を追記します。<br>
+デフォルトでは <code>directory_index: true</code> になっていますが、これだと <code>/404</code> という URL になってしまい、GitHub Pages では正しく表示してくれません。</p>
+<pre class="highlight ruby"><code><span class="c1">#source/404.html.slim</span>
+<span class="o">---</span>
+<span class="ss">directory_index: </span><span class="kp">false</span>
+<span class="o">---</span>
+
+<span class="n">h1</span>
+  <span class="o">|</span> <span class="mi">404</span>
+<span class="n">h3</span>
+  <span class="o">|</span> <span class="no">Page</span> <span class="n">not</span> <span class="n">found</span>
+</code></pre>
+
+<p>あとは、ビルドアンドデプロイ。</p>
+<pre class="highlight plaintext"><code>bundle exec middleman build
+bundle exec middleman deploy
+</code></pre>
+
+<p>デプロイが完了したら、ドメインに適当なパスを入力して確認してみましょう。</p>
+
+<h1 id="favicon">favicon</h1>
+
+<p>いざ設定しようと思って調べてみると、様々なデバイス向けに用意しなければならないことに愕然としてしまいます。<br>
+　<br>
+<a href="http://www.webcreatorbox.com/tech/favicon/">こちら</a> のサイトでも触れられているように、画像をアップロードするだけで favicon と様々なデバイス向けのタグを生成くれるサービスがあるようです。</p>
+
+<p>自分も早速 <a href="http://realfavicongenerator.net">Real Favicon Generator</a> を使って作ってみました。</p>
+
+<p>各デバイス用にリサイズされた画像群と HTML のコードが出力されます。<br>
+　<br>
+Drops テンプレートを使用すると、HTML テンプレートエンジンが自動的に <a href="https://github.com/slim-template/slim">slim</a> になるので、<a href="https://html2slim.herokuapp.com">ここ</a> で出力された HTML を slim に変換しましょう。<br>
+　<br>
+さらに、現状だと favicon だらけのドキュメントルートになってしまってうげーなので、ダウンロードした <code>favicons/</code> ディレクトリをそのままドキュメントルートに配置して、それに合わせて Slim 化した link, meta タグの <code>href</code> のパスや、manifest.json や browserconfig.xml 内のパスを書き換えます。<br>
+自分が持っている Mac や iPhone では確認しましたが、その他デバイスでは未確認です。。</p>
+<pre class="highlight ruby"><code><span class="c1">#source/layouts/layout.slim   </span>
+    <span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"shortcut icon"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"image/x-icon"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicon.ico"</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-57x57-497125d1.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"57x57"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-60x60-4e771ba8.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"60x60"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-72x72-e41e0c42.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"72x72"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-76x76-d40ca4ed.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"76x76"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-114x114-0477250e.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"114x114"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-120x120-bb29028e.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"120x120"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-144x144-41f60c1e.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"144x144"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-152x152-106db5b2.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"152x152"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/apple-touch-icon-180x180-7d79978b.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"apple-touch-icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"180x180"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/favicon-32x32-f6c5a6a4.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"32x32"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"image/png"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/android-chrome-192x192-9fdfb6ab.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"192x192"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"image/png"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/favicon-96x96-8708d047.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"96x96"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"image/png"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/favicon-16x16-e2f610e8.png"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"icon"</span> <span class="n">sizes</span><span class="o">=</span><span class="s2">"16x16"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"image/png"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/manifest.json"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"manifest"</span> <span class="o">/</span>
+    <span class="n">link</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#5bbad5"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"/favicons/safari-pinned-tab-13dc7d3f.svg"</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"mask-icon"</span> <span class="o">/</span>
+    <span class="n">meta</span> <span class="n">content</span><span class="o">=</span><span class="s2">"#da532c"</span> <span class="nb">name</span><span class="o">=</span><span class="s2">"msapplication-TileColor"</span> <span class="o">/</span>
+    <span class="n">meta</span> <span class="n">content</span><span class="o">=</span><span class="s2">"/mstile-144x144.png"</span> <span class="nb">name</span><span class="o">=</span><span class="s2">"msapplication-TileImage"</span> <span class="o">/</span>
+    <span class="n">meta</span> <span class="n">content</span><span class="o">=</span><span class="s2">"#ffffff"</span> <span class="nb">name</span><span class="o">=</span><span class="s2">"theme-color"</span> <span class="o">/</span>
+</code></pre>
+
+<h1 id="いいねボタン">いいねボタン</h1>
+
+<p>Qiita やはてなブログを使っているとあまり気に留めませんが、自前のブログなら自分でソーシャルボタンを設置しなければなりません。<br>
+　<br>
+今回は、ちょっと適当ですが、middleman 専用のソーシャルボタン View Helper をささーっと作って <a href="https://rubygems.org">Rubygems</a> に公開してみた(バグも含んでますし他のソーシャルボタンには未対応です。。)ので、それを使います。<br>
+　<br>
+設置方法は以下のようになります。<br>
+Facebook の App ID の取得方法は、<a href="http://www.tecblo.com/javascript/807.html">こちら</a>を参考にしてみてください。</p>
+<pre class="highlight plaintext"><code>#Gemfile
++gem 'middleman-social_tag_view_helper'
+</code></pre>
+<pre class="highlight ruby"><code><span class="c1">#config.rb</span>
+<span class="o">+</span><span class="n">set</span> <span class="ss">:facebook_app_id</span><span class="p">,</span> <span class="s1">'Facebook developerサイトで取得したID'</span>
+<span class="o">+</span><span class="n">activate</span> <span class="ss">:social_tag_view_helper</span>
+</code></pre>
+<pre class="highlight ruby"><code><span class="c1">#source/layouts/layout.slim</span>
+<span class="n">doctype</span> <span class="n">html</span>
+<span class="n">html</span> <span class="n">lang</span><span class="o">=</span><span class="s2">"ja"</span>
+  <span class="n">head</span>
+<span class="o">+</span>    <span class="o">=</span> <span class="n">facebook_app_id_meta_tag</span>
+<span class="o">+</span>    <span class="o">=</span> <span class="n">open_graph_meta_tag</span><span class="p">(</span><span class="ss">page_title: </span><span class="n">format_title</span><span class="p">,</span> <span class="ss">page_image: </span><span class="s2">"http://blog.takumi-onodera.work/favicons/mstile-310x310-d3b87fa9.png"</span><span class="p">)</span>  <span class="c1"># ブログのメイン画像は、favicon生成時のものを流用しました。。汗</span>
+</code></pre>
+<pre class="highlight ruby"><code><span class="c1">#source/partials/_social.html.slim</span>
+<span class="p">.</span><span class="nf">social</span>
+  <span class="sr">//</span> <span class="no">Add</span> <span class="n">social</span> <span class="n">sharing</span> <span class="n">buttons</span> <span class="n">here</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="nf">g</span><span class="o">.</span> <span class="no">Twitter</span> <span class="n">button</span><span class="p">)</span>
+<span class="o">+</span>  <span class="n">ul</span><span class="p">.</span><span class="nf">buttons</span>
+<span class="o">+</span>    <span class="n">li</span>
+<span class="o">+</span>      <span class="o">=</span> <span class="n">facebook_share_button</span>
+<span class="o">+</span>    <span class="n">li</span>
+<span class="o">+</span>      <span class="o">=</span> <span class="n">hatena_bookmark_button</span>
+</code></pre>
+<pre class="highlight scss"><code><span class="cm">/*
+source/stylesheets/partials/_social.css.scss
+*/</span>
+<span class="nc">.social</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">40px</span> <span class="nb">auto</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="nv">$content-body-padding</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="nv">$content-body-padding</span><span class="p">;</span>
+
+<span class="err">+  </span><span class="nl">min-height</span><span class="p">:</span> <span class="m">190px</span><span class="p">;</span>
+<span class="o">+</span>
+<span class="o">+</span>  <span class="nt">ul</span><span class="nc">.buttons</span> <span class="p">{</span>
+<span class="err">+    </span><span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="err">+    </span><span class="nl">width</span><span class="p">:</span> <span class="m">238px</span><span class="p">;</span>
+<span class="err">+    </span><span class="nl">margin</span><span class="p">:</span> <span class="m">24px</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="o">+</span>
+<span class="o">+</span>    <span class="nt">li</span> <span class="p">{</span>
+<span class="err">+      </span><span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="err">+      </span><span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">8px</span><span class="p">;</span>
+<span class="o">+</span>    <span class="p">}</span>
+<span class="o">+</span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>ちょっとボタンがずれてますが、こんな感じで設置しました！<br>
+たぶん、これで動くはず、、</p>
 
 <h1 id="他にもいろいろなテンプレート">他にもいろいろなテンプレート</h1>
 
@@ -238,12 +360,16 @@ end
 </ul>
 
 <p><code>Gemfile</code> で読み込んでいる <code>slim</code> のバージョンを上げないと <code>bundle exec middleman server</code> したときにエラーが出ました。</p>
-<pre class="highlight plaintext"><code>-gem 'slim', '~&gt; 2.0.2'
+<pre class="highlight plaintext"><code>#Gemfile
+-gem 'slim', '~&gt; 2.0.2'
 +gem 'slim', '~&gt; 3.0.6'
 </code></pre>
 
 <p>あと、以下を追加。</p>
-<pre class="highlight plaintext"><code>+$base-accent-color: #000000;
+<pre class="highlight scss"><code><span class="cm">/*
+source/stylesheets/base/_variables.scss
+*/</span>
+<span class="nv">$base-accent-color</span><span class="p">:</span> <span class="mh">#000000</span><span class="p">;</span>
 </code></pre>
 
 <p><img title="スクリーンショット 2015-12-01 21.38.08.png" alt="スクリーンショット 2015-12-01 21.38.08.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/79ee0b5b-5513-82ec-014e-1fee81ca18a9.png" /><br>
@@ -282,41 +408,49 @@ end
 
 <h1 id="その他、middleman-の雑記">その他、middleman の雑記</h1>
 
+<h2 id="拡張子が-.html-のファイル">拡張子が .html のファイル</h2>
+
+<p><code>source/</code> ディレクトリ以下に存在する .html.slim の拡張子がついたファイルは、middleman によって Slim テンプレートエンジン が自動的に Ruby のコードを解釈し、<code>source/layouts/layout.slim</code> ファイルをテンプレートにした HTML ファイルが出力されるようになっています。<br>
+　<br>
+.html の拡張子で終わるファイルは、Ruby のコードを解釈せず、<code>source/layouts/layout.slim</code>` ファイルをテンプレートとしても使用しないので、.htmlファイルの内容がそのままブラウザに表示されるため、CSS が効いてない！など初めて使う人ならここで混乱してしまうかもしれませんので、ご注意ください。</p>
+
 <h2 id="未来の日時を指定したファイルをデプロイしても、反映されない。">未来の日時を指定したファイルをデプロイしても、反映されない。</h2>
 
-<p>「このブログをあらかじめ作っておいて、あとAdvent Calendarに登録するだけやで！」とズルをしようと思いましたが、未来の日時に設定するとビルドしたときに、<code>build/</code> ディレクトリ以下に記事が作られないようです。</p>
+<p>「このブログをあらかじめ作っておいて、あとは Advent Calendar に登録するだけやで😁」とズルをしようと思いましたが、未来の日時に設定するとビルドしたときに、<code>build/</code> ディレクトリ以下に記事が作られないようです。</p>
 
 <h2 id="rails-の-activerecord-を参照する">Rails の ActiveRecord を参照する</h2>
 
 <p>Railsアプリの一部静的ページを middleman で作るとなった場合は、以下のことが参考になるかもなと思ったので、残しておきます。</p>
 
 <h3 id="gemfile-に以下を追加">Gemfile に以下を追加</h3>
-<pre class="highlight plaintext"><code>gem 'activerecord'
+<pre class="highlight plaintext"><code>#Gemfile
+gem 'activerecord'
 gem "mysql2", '~&gt; 0.3.13'
 </code></pre>
 
 <p>このとき、mysql2 のバージョンの指定をしないと、mysql2 が認識されないので注意</p>
 
 <h3 id="config.rb-に以下を追加">config.rb に以下を追加</h3>
-<pre class="highlight plaintext"><code>require 'active_record'
-require 'yaml'
+<pre class="highlight ruby"><code><span class="c1">#config.rb</span>
+<span class="nb">require</span> <span class="s1">'active_record'</span>
+<span class="nb">require</span> <span class="s1">'yaml'</span>
 
-config = YAML.load_file('../config/database.yml')
+<span class="n">config</span> <span class="o">=</span> <span class="no">YAML</span><span class="p">.</span><span class="nf">load_file</span><span class="p">(</span><span class="s1">'../config/database.yml'</span><span class="p">)</span>
 
-ActiveRecord::Base.establish_connection config['development']
-ActiveRecord::Base.logger = Logger.new(STDERR) # ログにSQLを出力
+<span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="p">.</span><span class="nf">establish_connection</span> <span class="n">config</span><span class="p">[</span><span class="s1">'development'</span><span class="p">]</span>
+<span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="p">.</span><span class="nf">logger</span> <span class="o">=</span> <span class="no">Logger</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="no">STDERR</span><span class="p">)</span> <span class="c1"># ログにSQLを出力</span>
 
-# 各Modelを使えるようにする
-Dir.glob("../app/models/**/*.rb").each do |file|
-  require_dependency file
-end
+<span class="c1"># 各Modelを使えるようにする</span>
+<span class="no">Dir</span><span class="p">.</span><span class="nf">glob</span><span class="p">(</span><span class="s2">"../app/models/**/*.rb"</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+  <span class="n">require_dependency</span> <span class="n">file</span>
+<span class="k">end</span>
 </code></pre>
 
-<p>上記を外部ファイルにするとき、自分は最初ファイル名を active_record.rb として保存していたが、</p>
+<p>上記を外部ファイルにするとき、自分は最初ファイル名を active_record.rb として保存していましたが、</p>
 <pre class="highlight plaintext"><code>/path/to/project/middleman/active_record.rb:6:in `&lt;top (required)&gt;': uninitialized constant ActiveRecord (NameError)
 </code></pre>
 
-<p>のエラーが出続けて悩みました。。</p>
+<p>のエラーが出続けて、初歩的なところで悩みました。。</p>
 
 <h3 id="modelが使えない場合">Modelが使えない場合</h3>
 
@@ -325,18 +459,31 @@ end
 </code></pre>
 
 <p>Railsのシガラミに囚われてしまっているので、下記のように書き換えてリレーション周りを再定義します。</p>
-<pre class="highlight plaintext"><code>Dir.glob("../app/models/*.rb") do |file|
-  self.class.const_set File.basename(file, '.rb').camelize, Class.new(ActiveRecord::Base)
-end
+<pre class="highlight ruby"><code><span class="c1">#config.rb</span>
+<span class="no">Dir</span><span class="p">.</span><span class="nf">glob</span><span class="p">(</span><span class="s2">"../app/models/*.rb"</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+  <span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">const_set</span> <span class="no">File</span><span class="p">.</span><span class="nf">basename</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">'.rb'</span><span class="p">).</span><span class="nf">camelize</span><span class="p">,</span> <span class="no">Class</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="p">)</span>
+<span class="k">end</span>
 
-class Hoge &lt; ActiveRecord::Base
-  has_many :fugas
-end
+<span class="k">class</span> <span class="nc">Hoge</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">has_many</span> <span class="ss">:fugas</span>
+<span class="k">end</span>
 
-class Fuga &lt; ActiveRecord::Base
-  belongs_to :hoge
-end
+<span class="k">class</span> <span class="nc">Fuga</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">belongs_to</span> <span class="ss">:hoge</span>
+<span class="k">end</span>
 </code></pre>
+
+<h1 id="いろいろやってみた感想">いろいろやってみた感想</h1>
+
+<p>インストールから公開まであっと言う間にできてしまったので、いろいろカスタマイズする心の余裕ができました。<br>
+また、普段から Rails で Ruby に触れているため不自由なく使えましたが、Ruby を使っていない人でも言語の壁を感じる前にブログサイトを公開できると思います。これを機に Ruby という言語に触れてファンが増えてくれると嬉しい限りです。<br>
+　<br>
+自分はブログ無精なので、今後更新していくかは微妙なところですが、Drops テンプレートの見た目もすごく綺麗だし、アウトプットすべきことは山ほどあるので、前向きに今回作ったブログを更新していきたいと思います。<br>
+　<br>
+あと、タイトル通りいろいろ盛り込みましたが、記事がダラダラとまとまりがなく長くなってしまい、大変お見苦しくてすいません。。🙇<br>
+　<br>
+　<br>
+明日は 8日目 matsusakiさんです。</p>
 <div class="social"><ul class="buttons"><li><script>
   window.fbAsyncInit = function() {
     FB.init({
