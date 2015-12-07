@@ -4,16 +4,16 @@
   <id>http://blog.takumi-onodera.work</id>
   <link href="http://blog.takumi-onodera.work"/>
   <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
-  <updated>2015-12-03T12:00:00+09:00</updated>
+  <updated>2015-12-07T12:00:00+09:00</updated>
   <author>
     <name>takkjoga</name>
   </author>
   <entry>
     <title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！</title>
-    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/"/>
-    <id>http://blog.takumi-onodera.work/2015/12/03/middleman-github-pages/</id>
-    <published>2015-12-03T12:00:00+09:00</published>
-    <updated>2015-12-07T00:30:25+09:00</updated>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/07/middleman-github-pages/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/07/middleman-github-pages/</id>
+    <published>2015-12-07T12:00:00+09:00</published>
+    <updated>2015-12-07T10:16:17+09:00</updated>
     <summary type="html">&lt;p&gt;&lt;img title="スクリーンショット 2015-12-03 10.12.07.png" alt="スクリーンショット 2015-12-03 10.12.07.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/cbe49151-d0bc-adad-6e62-aefe40039e79.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;これは &lt;a href="http://www.adventar.org/calendars/1044"&gt;【その2】ドリコム Advent Calendar 2015&lt;/a&gt; 7日目の記事です。&lt;br /&gt;
@@ -22,11 +22,11 @@
 　&lt;br /&gt;
 &lt;a href="http://www.adventar.org/calendars/1043"&gt;【その1】ドリコム Advent Calendar 2015&lt;/a&gt; はこちらです。&lt;br /&gt;
 　&lt;br /&gt;
-個人的には、&lt;a href="http://kakaricho.hatenadiary.jp/entry/2015/12/05/172344"&gt;この&lt;/a&gt;記事がオススメです。熱くて愛のある❤️いい記事&lt;/p&gt;
+個人的には、&lt;a href="http://kakaricho.hatenadiary.jp/entry/2015/12/05/172344"&gt;この&lt;/a&gt;記事がオススメです。熱くて愛のある❤️いい記事です。&lt;/p&gt;
 
 &lt;h1 id="自己紹介"&gt;自己紹介&lt;/h1&gt;
 
-&lt;p&gt;ドリコムに入ってから Ruby を始めたエンジニ...&lt;/p&gt;</summary>
+&lt;p&gt;ドリコムに入ってから Ruby を始めたエ...&lt;/p&gt;</summary>
     <content type="html">&lt;p&gt;&lt;img title="スクリーンショット 2015-12-03 10.12.07.png" alt="スクリーンショット 2015-12-03 10.12.07.png" src="https://qiita-image-store.s3.amazonaws.com/0/32480/cbe49151-d0bc-adad-6e62-aefe40039e79.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;これは &lt;a href="http://www.adventar.org/calendars/1044"&gt;【その2】ドリコム Advent Calendar 2015&lt;/a&gt; 7日目の記事です。&lt;br&gt;
@@ -35,7 +35,7 @@
 　&lt;br&gt;
 &lt;a href="http://www.adventar.org/calendars/1043"&gt;【その1】ドリコム Advent Calendar 2015&lt;/a&gt; はこちらです。&lt;br&gt;
 　&lt;br&gt;
-個人的には、&lt;a href="http://kakaricho.hatenadiary.jp/entry/2015/12/05/172344"&gt;この&lt;/a&gt;記事がオススメです。熱くて愛のある❤️いい記事&lt;/p&gt;
+個人的には、&lt;a href="http://kakaricho.hatenadiary.jp/entry/2015/12/05/172344"&gt;この&lt;/a&gt;記事がオススメです。熱くて愛のある❤️いい記事です。&lt;/p&gt;
 
 &lt;h1 id="自己紹介"&gt;自己紹介&lt;/h1&gt;
 
