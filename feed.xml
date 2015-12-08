@@ -4,10 +4,51 @@
   <id>http://blog.takumi-onodera.work</id>
   <link href="http://blog.takumi-onodera.work"/>
   <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
-  <updated>2015-12-07T12:00:00+09:00</updated>
+  <updated>2015-12-08T11:20:00+09:00</updated>
   <author>
     <name>takkjoga</name>
   </author>
+  <entry>
+    <title>middleman-social_tag_view_helperにTwitterボタンを追加しました</title>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/08/middleman-twitter-gem/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/08/middleman-twitter-gem/</id>
+    <published>2015-12-08T11:20:00+09:00</published>
+    <updated>2015-12-08T11:30:46+09:00</updated>
+    <summary type="html">&lt;p&gt;昨日書いた記事の文中で使用している &lt;code&gt;middleman-social_tag_view_helper&lt;/code&gt; gem の&lt;br /&gt;
+v0.1.3 を公開しました。&lt;br /&gt;
+　&lt;br /&gt;
+変更点は Twitter のシェアボタンの追加のみです。&lt;br /&gt;
+　&lt;br /&gt;
+使用方法は以下です。&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;#config.rb&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Twitterのユーザー名を設定すると、このユーザー宛のメンション付きのツイートが作成されます。&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:twitter_user_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;apos;takkjoga&amp;apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;#source/partials/_social.html.slim&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</summary>
+    <content type="html">&lt;p&gt;昨日書いた記事の文中で使用している &lt;code&gt;middleman-social_tag_view_helper&lt;/code&gt; gem の&lt;br&gt;
+v0.1.3 を公開しました。&lt;br&gt;
+　&lt;br&gt;
+変更点は Twitter のシェアボタンの追加のみです。&lt;br&gt;
+　&lt;br&gt;
+使用方法は以下です。&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;#config.rb&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Twitterのユーザー名を設定すると、このユーザー宛のメンション付きのツイートが作成されます。&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:twitter_user_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'takkjoga'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;#source/partials/_social.html.slim&lt;/span&gt;
+&lt;span class="c1"&gt;# twitter_share_button の引数に Twitter のユーザー名を指定することも可能です。&lt;/span&gt;
+&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;twitter_share_button&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;なぜか表示が崩れる。。&lt;br&gt;
+どなたかCSS教えて。。！&lt;/p&gt;
+
+&lt;p&gt;　&lt;br&gt;
+今後も他のソーシャルボタンの追加とバグフィックスを続けていこうと思います。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>middlemanとGitHub Pagesでブログを5分で開設！ほか盛りだくさん！</title>
     <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/07/middleman-github-pages/"/>
