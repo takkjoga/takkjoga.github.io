@@ -4,10 +4,35 @@
   <id>http://blog.takumi-onodera.work</id>
   <link href="http://blog.takumi-onodera.work"/>
   <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
-  <updated>2015-12-08T11:20:00+09:00</updated>
+  <updated>2015-12-10T11:14:00+09:00</updated>
   <author>
     <name>takkjoga</name>
   </author>
+  <entry>
+    <title>middleman-social_tag_view_helperにFacebook commentヘルパーを追加しました</title>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/10/middleman-facebook/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/10/middleman-facebook/</id>
+    <published>2015-12-10T11:14:00+09:00</published>
+    <updated>2015-12-10T11:17:04+09:00</updated>
+    <summary type="html">&lt;p&gt;middleman-social_tag_view_helper のバージョンを 0.1.4 にしました。&lt;/p&gt;
+
+&lt;p&gt;　&lt;br&gt;
+落ち着いて見てみると、gem 名は &lt;code&gt;middleman-social_tag_view_helper&lt;/code&gt; なのに、&lt;br&gt;
+&lt;code&gt;middleman-blog&lt;/code&gt; を使っている前提のコードになっていることに気がつきました。。&lt;/p&gt;
+
+&lt;p&gt;　&lt;br&gt;
+土日に blog 以外の middleman の環境でも動くように直します。&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;middleman-social_tag_view_helper のバージョンを 0.1.4 にしました。&lt;/p&gt;
+
+&lt;p&gt;　&lt;br&gt;
+落ち着いて見てみると、gem 名は &lt;code&gt;middleman-social_tag_view_helper&lt;/code&gt; なのに、&lt;br&gt;
+&lt;code&gt;middleman-blog&lt;/code&gt; を使っている前提のコードになっていることに気がつきました。。&lt;/p&gt;
+
+&lt;p&gt;　&lt;br&gt;
+土日に blog 以外の middleman の環境でも動くように直します。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>middleman-social_tag_view_helperにTwitterボタンを追加しました</title>
     <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/08/middleman-twitter-gem/"/>
