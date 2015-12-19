@@ -13,7 +13,7 @@
     <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/19/middleman/"/>
     <id>http://blog.takumi-onodera.work/2015/12/19/middleman/</id>
     <published>2015-12-19T20:59:00+09:00</published>
-    <updated>2015-12-19T21:00:54+09:00</updated>
+    <updated>2015-12-19T21:14:24+09:00</updated>
     <summary type="html">&lt;p&gt;&lt;code&gt;middleman help server&lt;/code&gt; としても&lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;Usage:
   middleman server [options]
@@ -140,6 +140,10 @@
 &lt;li&gt;デフォルト値: 0.25&lt;/li&gt;
 &lt;li&gt;ファイル更新検知の間隔を秒で指定します。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;以上 14 個のオプションがあるようです。&lt;br&gt;
+https オプションや、ssl_* オプションがあるので、ローカルのプレビューサーバー以外でも、&lt;br&gt;
+ホスティングされたサーバー上での利用も考えられているのかもしれません。&lt;/p&gt;
 </content>
   </entry>
   <entry>
