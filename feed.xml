@@ -4,10 +4,144 @@
   <id>http://blog.takumi-onodera.work</id>
   <link href="http://blog.takumi-onodera.work"/>
   <link href="http://blog.takumi-onodera.work/feed.xml" rel="self"/>
-  <updated>2015-12-12T21:03:00+09:00</updated>
+  <updated>2015-12-19T20:59:00+09:00</updated>
   <author>
     <name>takkjoga</name>
   </author>
+  <entry>
+    <title>middleman server のオプション</title>
+    <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/19/middleman/"/>
+    <id>http://blog.takumi-onodera.work/2015/12/19/middleman/</id>
+    <published>2015-12-19T20:59:00+09:00</published>
+    <updated>2015-12-19T21:00:54+09:00</updated>
+    <summary type="html">&lt;p&gt;&lt;code&gt;middleman help server&lt;/code&gt; としても&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Usage:
+  middleman server [options]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;としか出ないし、&lt;br /&gt;
+ググッてもなかなか見つからないので、自分でソースコードを見てみることにしました。&lt;br /&gt;
+　&lt;br /&gt;
+※ソースコードを深く追えていないので、起動時にオプションを指定して確認できたものは説明を記載しています。&lt;br /&gt;
+　&lt;br /&gt;
+確認した Middleman の情報は以下です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;version: 3.4.0&lt;/li&gt;
+&lt;li&gt;ファイルパス: middleman-core-3.4.0/lib/middleman...&lt;/li&gt;&lt;/ul&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;code&gt;middleman help server&lt;/code&gt; としても&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Usage:
+  middleman server [options]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;としか出ないし、&lt;br&gt;
+ググッてもなかなか見つからないので、自分でソースコードを見てみることにしました。&lt;br&gt;
+　&lt;br&gt;
+※ソースコードを深く追えていないので、起動時にオプションを指定して確認できたものは説明を記載しています。&lt;br&gt;
+　&lt;br&gt;
+確認した Middleman の情報は以下です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;version: 3.4.0&lt;/li&gt;
+&lt;li&gt;ファイルパス: middleman-core-3.4.0/lib/middleman-core/cli/server.rb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--environment-または--e"&gt;--environment または -e&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: The environment Middleman will run under&lt;/li&gt;
+&lt;li&gt;デフォルト値: &amp;#39;development&amp;#39;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--port-または--p"&gt;--port または -p&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: The port Middleman will listen on&lt;/li&gt;
+&lt;li&gt;デフォルト値: 書いてないけど、多分 4567&lt;/li&gt;
+&lt;li&gt;待機ポート番号を指定できます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--server_name-または--s"&gt;--server_name または -s&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: The server name name Middleman will use&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--bind_address-または--b"&gt;--bind_address または -b&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: The bind address Middleman will listen on&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--https"&gt;--https&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Serve the preview server over SSL/TLS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--ssl_certificate"&gt;--ssl_certificate&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Path to an X.509 certificate to use for the preview server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--ssl_private_key"&gt;--ssl_private_key&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Path to an RSA private key for the preview server&amp;#39;s certificate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--verbose"&gt;--verbose&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Print debug messages&lt;/li&gt;
+&lt;li&gt;サーバーを起動すると、詳細なデバッグメッセージが出力されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--instrument"&gt;--instrument&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Print instrument messages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--disable_watcher"&gt;--disable_watcher&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Disable the file change and delete watcher process&lt;/li&gt;
+&lt;li&gt;ファイルを保存したり、ファイルを削除したときに自動でサーバーを再読み込みする処理を無効にします。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--profile"&gt;--profile&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Generate profiling report for server startup&lt;/li&gt;
+&lt;li&gt;このオプションを使用するためには、Gemfile に ```gem &amp;#39;ruby-prof&amp;#39; と記述して、install する必要があります。&lt;/li&gt;
+&lt;li&gt;このオプションを指定してサーバーを起動すると、MiddlemanRoot 以下に &lt;code&gt;profile/server_start.html&lt;/code&gt; というファイルを生成します。&lt;/li&gt;
+&lt;li&gt;ruby-profの説明は &lt;a href="https://kaihar4.com/2015/04/12/ruby-prof.html"&gt;ここ&lt;/a&gt; に説明が詳しく載っていますが、サーバープロセスをプロファイルした結果がHTMLファイルとして出力されるようです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--reload_paths"&gt;--reload_paths&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Additional paths to auto-reload when files change&lt;/li&gt;
+&lt;li&gt;MiddlemanRoot 以外のディレクトリ以下でファイルが更新や削除されたのを検知して再読み込みをする。のかなと思って試してみたけど、MiddlemanRootより上の階層のディレクトリを指定してもファイルを指定しても、自動では再読み込みされませんでした。。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--force_polling"&gt;--force_polling&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Force file watcher into polling mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="--latency-または--l"&gt;--latency または -l&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;説明: Set file watcher latency, in seconds&lt;/li&gt;
+&lt;li&gt;デフォルト値: 0.25&lt;/li&gt;
+&lt;li&gt;ファイル更新検知の間隔を秒で指定します。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>ブログのソースコードを公開しました</title>
     <link rel="alternate" href="http://blog.takumi-onodera.work/2015/12/12/middleman/"/>
